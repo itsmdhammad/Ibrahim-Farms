@@ -1,0 +1,329 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+#scroll-up{
+    font-size: 25px;
+    background-color: #7f9639;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 999;
+    padding: 1%;
+    right: 1%;
+    bottom: 1%;
+}
+
+#scroll-up:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+nav{
+    width: 100%;
+    color: black;
+    display: flex;
+    background-color: #98b14f;
+    justify-content: space-around;
+}
+
+nav #title{
+    width: 15%;
+}
+
+nav #title h1{
+    font-size: 30px;
+}
+
+nav #nav-links{
+    width: 35%;
+    margin-top: 2%;
+    margin-left: 20%;
+    justify-content: space-around;
+}
+
+nav #nav-links a{
+    width: max-content;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    padding: 1% 1.5%;
+    background-color: #acc559;
+    border-radius: 1px;
+    border: 1px solid #6a8028;
+}
+
+nav #nav-links a:hover{
+    transition: 0.5s;
+    background-color: #6a8028;
+    border: 1px solid #6a8028;
+    color: rgb(235, 235, 235);
+}
+
+/*  ------  Scroll Text from Here */
+
+#scroll-text{
+    background-color: rgb(236, 236, 236);
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+}
+#scroll-text marquee{
+margin: 0% 7.5%;
+padding: 0.5% 0%;
+color: red;
+animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.2;
+    }
+}
+
+#scroll-text marquee a{
+    text-decoration: none;
+    color: black;
+}
+
+/*  ------  Home Section from Here ------ */
+
+#Home{
+    background-image: url(/img/Home.jpeg);
+    min-height: 85vh;
+
+}
+
+#crops-img{
+    background-image: url(/img/Crops.jpg);
+    min-height: 300px;
+}
+
+#media-img{
+    background-image: url(/img/media.jpg);
+    min-height: 300px;        
+}
+
+#contact-img{
+    background-image: url(/img/culture.jpg);
+    min-height: 300px;    
+}
+
+
+#Home, #crops-img, #contact-img, #media-img{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+
+
+#home-text, #crops-text, #contact-text, #media-text{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#home-text span, #crops-text span, #contact-text span, #media-text span{
+    padding: 1% 2%;
+    color: black;
+    background-color: rgb(185, 188, 126);
+    border-radius: 2px;
+    font-size: 35px;
+}
+
+#crops-text span{
+    font-size: 45px;
+    background: transparent;
+    font-weight: 900;
+}
+
+#media-text span{
+    color: white;
+    font-size: 45px;
+    background: transparent;
+    font-weight: 900;
+}
+
+#contact-text span{
+    color: white;
+    font-size: 45px;
+    background: transparent;
+    font-weight: 500;
+}
+
+/*  ------  About Section from Here ------ */
+
+#about{
+    position: relative;
+    width: 100%;
+}
+#about h1{
+    font-size: 35px;
+text-align: center;
+}
+#about .container{
+    width: 80%;
+    display: flex;
+    margin: 0% 10%;
+}
+
+#about .item{
+    width: 27.33%;
+    margin: 2% 3%;
+    background-color: rgb(219, 219, 219);
+    border-radius: 5px;
+}
+
+#about .item p{
+    font-size: 20px;
+    text-align: center;
+}
+
+#about .item .fa{
+    margin: 10% 35%;
+    font-size: 120px;
+}
+
+#about .item .fa-users{
+    color: rgb(142, 153, 68);
+}
+
+#about .item .fa-hourglass-start{
+color: rgb(53, 104, 245);
+}
+
+#about .item .fa-receipt{
+color: rgb(41, 136, 41);
+}
+
+#crops{
+    padding: 2% 0%;
+}
+
+#crops #items{
+    margin: 2% 10%;
+    display: flex;
+}
+
+#crops div{
+    margin: 0% 5%;
+}
+
+#crops #items img{
+    width: 120vh;
+    height: 50vh;
+}
+
+/* ---------- Media gallery Here --------------- */
+#media{
+padding: 2% 10%;
+}
+#media .items{
+    display: flex;
+}
+
+#media .items img{
+    margin: 1% 1%;
+    width: 54vh;
+    height: 50vh;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 5px rgb(168, 168, 168);
+    transition: 0.5s;
+}
+
+#media .items img:hover{
+    margin: 1% 1%;
+    width: 100vh;
+    height: 50vh;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 5px rgb(168, 168, 168);
+    cursor: pointer;
+}
+
+#contact{
+    padding: 2% 10%;
+    display: flex;
+}
+
+#contact div{
+    /* line-height: 30px; */
+    width: 40%;
+    font-size: 20px;
+    margin-right: 20%;
+}
+
+#contact form{
+    position: relative;
+    border-radius: 10px;
+    width: 35%;
+    height: 385px;
+    padding: 1%;
+    background-color: rgb(231, 231, 231);
+}
+
+#contact form{
+    font-size: 25px;
+}
+
+#contact form input[type="text"], input[type="email"]{
+    font-size: 25px;
+    margin: 1% 0%;
+    padding: 1%;
+    width: 98.5%;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: rgb(172, 172, 172);
+}
+
+#contact form textarea{
+    margin: 1% 0%;
+    font-size: 25px;
+    padding: 1%;
+    width: 98.5%;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: rgb(172, 172, 172);
+}
+
+#contact form input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    background-color:rgb(145, 145, 145);
+    color: white;
+}
+
+#contact form button{
+    font-size: 22px;
+    width: 100.5%;
+    padding: 2% 0%;
+    background-color: #98b14f;
+    border: 2px solid #98b14f;
+    cursor: pointer;
+}
+
+#contact form button:hover{
+    color: white;
+    background-color: #586926;
+    border: 2px solid #586926;
+    transition: 0.5s;
+}
+
+.copyright p{
+    padding: 1%;
+    margin: 0%;
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+}
